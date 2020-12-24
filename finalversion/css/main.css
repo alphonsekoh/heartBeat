@@ -1,0 +1,517 @@
+/*This file contains the css of the home page of the website*/
+
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&family=Pattaya&family=Poppins&family=Pragati+Narrow&family=Secular+One&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navbar{
+    background-color: #FFFFA5;
+    z-index: 10;
+}
+
+#navbarToggler ul li a {
+    text-align: center;
+    display: block;
+    color: #FFFFA5;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Secular One', sans-serif;
+}
+
+#navbarToggler ul li a:hover {
+    color: #df7d7b;
+}
+
+/*codes for wrapper box split slider*/
+.wrapper_box{
+    margin:0;
+    padding:0;
+
+    line-height: 50px;
+    font-family: 'Secular One', sans-serif;
+}
+
+#wrapper{
+    position: relative;
+    width:100%;
+    min-height:37vw;
+    overflow: hidden;
+}
+
+.layer{
+    position: absolute;
+    width:104vw;
+    min-height: 37vw;
+    overflow: hidden;
+}
+
+.layer .content-wrap{
+    position: absolute;
+    width:104vw;
+    min-height: 55vw;
+}
+
+.layer .content-body{
+    width:25%;
+    position:absolute;
+    top:60%;
+    text-align: center;
+    transform:translateY(-50%);
+}
+
+.layer img{
+    position: absolute;
+    width:50%;
+    top:33.5%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+}
+
+.layer h1{
+    color: black;
+    font-weight: bold;
+    font-size:2vw;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bottom{
+    background:#ece6d8;
+}
+
+.bottom .content-body{
+    right:10%;
+    text-align: right;
+    padding: 10px;
+}
+
+.top{
+    background: #969696;
+}
+
+.top .content-body{
+    left: 10%;
+    text-align: left;
+}
+
+/*handle for wrapper_box*/
+.wrapper_box{
+    border-color: black;
+    border-width: 2px;
+}
+
+.handle{
+    position: absolute;
+    height: 100%;
+    display: block;
+    background-color:black;
+    width:5px;
+    top:0;
+    left: 50%;
+    z-index:3;
+}
+
+.skewed .handle{
+    top:50%;
+    transform:rotate(30deg) translateY(-50%);
+    height: 200%;
+    transform-origin:top;
+}
+
+.skewed .top{
+    transform: skew(-30deg);
+    margin-left:-1000px;
+    width: calc(50vw + 1000px);
+}
+
+.skewed .top .content-wrap{
+    transform: skew(30deg);
+    margin-left:1000px;
+}
+
+@media(max-width:768px){
+    body{
+        font-size:75%;
+    }
+}
+
+
+/*video*/
+video{
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    opacity: 40%;
+    position: absolute;
+}
+
+
+.card {
+
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 30%;
+    padding-bottom: 30px;
+    padding-top: 50px;
+    text-align: center;
+    margin: 10px;
+
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#maincontainer{
+    height: 500px;
+}
+
+.container h4
+{
+    padding-bottom: 30px;
+}
+
+.row{
+    padding-left: 90px;
+    margin: 20px;
+
+}
+
+.card img
+{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+a img
+{
+    width: 40px;
+    height: 40px;
+}
+
+.keyboard_arrow_up{
+    left: 50%;
+    position: absolute;
+    font-size: 100px !important;
+    color: #FFFFA5;
+}
+
+
+/*footer*/
+footer{
+    position: fixed;
+    bottom: 0;
+}
+
+@media (max-height:800px){
+    footer { position: static; }
+    header { padding-top:40px; }
+}
+
+.footer-distributed{
+    background-color: #212529;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px 'Poppins', sans-serif;
+    padding: 80px 50px 60px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+    width: 30%;
+}
+
+.footer-distributed h3{
+    color:  #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+}
+
+/* The company logo */
+
+.footer-distributed .footer-left img{
+    width: 20%;
+}
+
+.footer-distributed h3 span{
+    color:  #df7d7b;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+    color:  #FFFFA5;
+    margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a{
+    display:inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+    color:  #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+    width: 35%;
+}
+
+
+.footer-distributed .footer-center i{
+    background-color:  #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin:0;
+}
+
+.footer-distributed .footer-center p span{
+    display:block;
+    font-weight: normal;
+    font-size:14px;
+    line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+    color:  #FFFFA5;
+    text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+    width: 30%;
+}
+
+.footer-distributed .footer-company-about{
+    line-height: 20px;
+    color:  #FFFFA5;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+    display: block;
+    color:  #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color:  #33383b;
+    border-radius: 2px;
+
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+
+
+@media (max-width: 880px) {
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right{
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .footer-distributed .footer-center i{
+        margin-left: 0;
+    }
+
+}
+
+.user_body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 15px;
+    background-size: 200% 100% !important;
+    animation: move 5s ease infinite;
+    transform: translate3d(0, 0, 0);
+    background: linear-gradient(45deg, #49D49D 10%, #A2C7E5 90%);
+}
+
+.user {
+    width: 100%;
+    max-width: 340px;
+    margin: 10vh auto;
+}
+
+.user__header {
+    text-align: center;
+    opacity: 0;
+    transform: translate3d(0, 500px, 0);
+    animation: arrive 500ms ease-in-out 0.3s forwards;
+}
+
+.user__header h3{
+    color:  #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+}
+
+.user__title {
+    font-size: 15px;
+    margin-bottom: -10px;
+    font-weight: 500;
+    color: white;
+}
+
+#user_form {
+    margin-top: 40px;
+    border-radius: 6px;
+    overflow: hidden;
+    opacity: 0;
+    transform: translate3d(0, 500px, 0);
+    animation: arrive 500ms ease-in-out 0.7s forwards;
+}
+
+.form--no {
+    animation: NO 1s ease-in-out;
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    -webkit-appearance: none;
+    border: 0;
+    outline: 0;
+    transition: 0.3s;
+
+    &:focus {
+        background: darken(#fff, 3%);
+    }
+}
+
+.user .btn {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    -webkit-appearance: none;
+    outline: 0;
+    border: 0;
+    color: white;
+    background-image: linear-gradient(to bottom right, green, blue);
+    transition: 0.3s;
+
+    &:hover {
+        background: darken(linear-gradient(to bottom right, green, blue), 100%);
+    }
+}
+
+.error {
+    color: #FF0000;
+    transition: 0.3s;
+}
+@keyframes NO {
+    from, to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    10%, 30%, 50%, 70%, 90% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+    }
+
+    20%, 40%, 60%, 80% {
+        -webkit-transform: translate3d(10px, 0, 0);
+        transform: translate3d(10px, 0, 0);
+    }
+}
+
+@keyframes arrive {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 50px, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes move {
+    0% {
+        background-position: 0 0
+    }
+
+    50% {
+        background-position: 100% 0
+    }
+
+    100% {
+        background-position: 0 0
+    }
+}
+
+#event_cause
+{
+    color: black;
+}

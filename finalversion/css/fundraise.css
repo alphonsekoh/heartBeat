@@ -1,0 +1,51 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 2, 2020, 8:49:37 PM
+    Author     : Huan Yin
+*/
+
+.form .card{
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  margin: 0 auto 100px;
+  text-align: left;
+  background: #AAB6B0;
+  align-content: left;
+}
+
+.form-group .form-control-file{
+     background: #AAB6B0;
+}
+
+body {
+  background: #76b852; /* fallback for old browsers */
+  background: -webkit-linear-gradient(right, #76b852, #8DC26F);
+  background: -moz-linear-gradient(right, #76b852, #8DC26F);
+  background: -o-linear-gradient(right, #76b852, #8DC26F);
+  background: linear-gradient(to left, #76b852, #8DC26F);
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;      
+}
+
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0;
+
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+
+
+
+

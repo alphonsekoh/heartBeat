@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&family=Pattaya&family=Poppins&family=Pragati+Narrow&family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+body{
+    background-color: #f5f6fa;
+    overflow-x: hidden;
+}
+
+/*section header*/
+.letterpress {
+    text-align: center;
+    letter-spacing: 5px;
+    margin-top: 60px;
+    font-weight: 800;
+    font-family: 'Passion One', cursive;
+    color: #B54946;
+    text-shadow: 2px 2px #FFB5B3;
+    z-index: -1;
+}
+
+/*founder introduction*/
+#founder_img{
+    height: auto;
+    object-fit: cover;
+    padding: 20px;
+}
+
+.container-fluid {
+    padding: 10px 50px;
+    overflow: hidden;
+    width: 100%;
+    overflow: hidden;
+    display: inline-block;
+}
+
+#founder_name{
+    font-size: 20px;
+    float: right;
+    color: #181818;
+    font-family: 'Pragati Narrow', sans-serif;
+}
+
+.about_right {
+    padding: 80px 60px;
+    background: #ffffff;
+    margin-top: 70px;
+    margin-left: -40px;
+    z-index: 2;
+    box-shadow: 0px 5px 40px rgba(153, 153, 153, 0.2); 
+}
+
+.about_right h2{
+    padding-top: 70px;
+    text-align: left;
+    font-family: 'Secular One', sans-serif;
+}
+
+.img_center{
+    text-align: center;
+}
+
+/* This only changes this particular animation duration */
+.animate__animated {
+    --animate-duration: 1.2s;
+}
+
+/*carousel*/
+.carousel h4{
+    font-size: 3vw;
+    font-family: 'Amaranth', sans-serif;
+    position: absolute;
+    top: 30px;
+    text-align: center;
+    margin: 100px;
+    z-index: 2;
+}
+
+.testimonial_writer{
+    font-size: 25px;
+    font-family: 'Amaranth', sans-serif;
+    color: #B54946;
+
+}
+
+.quotation{
+    font-size: 20vw;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: #ffffff;
+    z-index: 1;
+}
+
+.open_quote{
+    position: absolute;
+    left: 10px;
+    top: 0px;
+}
+
+.close_quote{
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .carousel-item img{
+        height:700px;
+        opacity: 17%;
+    }
+    .about_right h2{
+        font-size: 30px;
+    }
+    #founder_img{
+        width: 500px;
+    }
+    .letterpress{
+        font-size: 100px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .carousel-item img{
+        height:450px;
+        opacity: 17%;
+    }
+    .about_right h2{
+        font-size: 20px;
+    }
+    #founder_img{
+        width: 380px;
+    }
+    .letterpress{
+        font-size: 75px;
+    }
+}
+
+.carousel_arrows{
+    color: #000000;
+}
+
+
+.pimg1{
+    background-image:url('../images/box_negative_side.jpg');
+    height: 400px;
+}
+
+@media(max-width:568px){
+    .pimg1{
+        background-attachment:scroll;
+    }
+}
